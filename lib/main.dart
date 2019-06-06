@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './product_manager.dart';
+
 main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -10,14 +12,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Easy List'),
         ),
-        body: Card(
-          child: Column(
-            children: <Widget>[
-              Image.asset('assets/food.jpg'),
-              Text('Food Paradise')
-            ],
-          ),
-        ),
+        body: ProductManager('Food Tester'),
       ),
     );
   }
